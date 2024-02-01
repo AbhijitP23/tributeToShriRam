@@ -48,6 +48,13 @@ Country = {
          "Currency": "CFA Franc"
     }
 }
+print("List of contries and capitals:")
+for x, y in Country.items():
+    print("Country:", x )
+    for m,n in y.items():
+        print(m,":",n)
+
+print("\n")
 print("country who has doller currency:")
 for x, y in Country.items():
     #print("Country:", x )
@@ -57,16 +64,15 @@ for x, y in Country.items():
             print(x)
 
 
-
+print("\n")
 print("Find the word whose has and & of letter:")
 for x in Country.keys():
     y=x.lower()
     if "and" in y or "of" in y:
         print(y)
 
+print("\n")
 print("Add new key in inner dictionary: ")
-
-
 for x, y in Country.items():
     for m, n in y.items():
         if(m=="Capital"):
